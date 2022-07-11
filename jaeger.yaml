@@ -18,35 +18,7 @@ items:
 - apiVersion: v1
   kind: Namespace
   metadata:
-      name: jaeger   
-#- apiVersion: v1
-#  kind: ConfigMap
-#  metadata:
-#    name: collector-config
-#    namespace: jaeger
-#  data:
-#    collector.yaml: |
-#      receivers:
-#        otlp:
-#          protocols: 
-#            grpc:
-#      processors:
-#      exporters:
-#        otlp:
-#          endpoint: "0.0.0.0:8126"
-#          tls:
-#           insecure: true
-#        datadog:
-#          api:
-#            key: "50a88da0b31f552b128b6be92eb229d0"
-#            site: datadoghq.eu
-#        logging:
-#      service:
-#        pipelines:
-#          traces:
-#            receivers: [otlp]
-#            processors: []
-#            exporters: [logging, datadog, otlp]      
+      name: jaeger     
 - apiVersion: apps/v1
   kind: Deployment
   metadata:
